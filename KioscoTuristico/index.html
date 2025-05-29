@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiosco Turístico Morelos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">🌄 Morelos Turístico</div>
+        <div class="lang-switch" role="group" aria-label="Cambio de idioma">
+            <button lang="es" aria-pressed="true" title="Español">🇲🇽</button>
+            <button lang="en" aria-pressed="false" title="English">🇺🇸</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Explora los 37 municipios de Morelos</h1>
+            <p>Descubre rutas, cultura, gastronomía y eventos únicos.</p>
+        </section>
+
+        <nav class="menu-grid" aria-label="Menú principal de categorías">
+            <a href="pages/municipios.html" class="menu-button">🏙️ Municipios</a>
+            <a href="pages/eventos.html" class="menu-button">📆 Eventos</a>
+            <a href="pages/gastronomia.html" class="menu-button">🍽️ Gastronomía</a>
+            <a href="pages/hospedaje.html" class="menu-button">🛏️ Hospedaje</a>
+            <a href="pages/actividades.html" class="menu-button">🧭 Actividades</a>
+            <a href="pages/ayuda.html" class="menu-button">🆘 Ayuda</a>
+        </nav>
+
+        <section class="municipios" id="destacados" aria-labelledby="destacados-heading">
+            <h2 id="destacados-heading">Lugares, Actividades y Eventos Destacados</h2>
+            <div class="municipios-grid">
+                <article class="card">
+                    <h3>Jardín Etnobotánico y Museo de Medicina Tradicional</h3>
+                    <p>Un hermoso jardín histórico en el corazón de Cuernavaca.</p>
+                    <a href="pages/actividades.html#ecoturismo-naturaleza" class="card-link" aria-label="Ver más detalles del Jardín Etnobotánico"></a>
+                </article>
+                <article class="card">
+                    <h3>Carnaval de Tepoztlán</h3>
+                    <p>Famoso por la Danza de los Chinelos y su ambiente festivo.</p>
+                    <a href="pages/eventos/feria-cuernavaca.html" class="card-link" aria-label="Ver más detalles del Carnaval de Tepoztlán"></a>
+                </article>
+                <article class="card">
+                    <h3>Senderismo en Huitzilac</h3>
+                    <p>Explora cascadas y rutas naturales como los Cieneguitos.</p>
+                    <a href="pages/actividades.html#ecoturismo-naturaleza" class="card-link" aria-label="Ver más detalles de Senderismo en Huitzilac"></a>
+                </article>
+                <article class="card">
+                    <h3>Zona Arqueológica de Xochicalco</h3>
+                    <p>Impresionante sitio prehispánico, Patrimonio de la Humanidad.</p>
+                    <a href="pages/actividades.html#cultura-historia" class="card-link" aria-label="Ver más detalles de Xochicalco"></a>
+                </article>
+                <article class="card">
+                    <h3>Balneario Las Estacas</h3>
+                    <p>Un oasis natural con río cristalino, ideal para nadar y relajarse.</p>
+                    <a href="pages/actividades.html#acuaticas-aventura" class="card-link" aria-label="Ver más detalles del Balneario Las Estacas"></a>
+                </article>
+                <article class="card">
+                    <h3>Feria de la Cecina, Yecapixtla</h3>
+                    <p>Gran evento gastronómico en la capital mundial de la cecina.</p>
+                    <a href="pages/eventos/feria-cecina-yecapixtla.html" class="card-link" aria-label="Ver más detalles de la Feria de la Cecina"></a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gobierno del Estado de Morelos © 2025</p>
+    </footer>
+</body>
+</html>
