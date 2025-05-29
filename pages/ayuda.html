@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - Morelos Turístico</title>
+    <link rel="stylesheet" href="../styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+    <header>
+        <div class="logo">🌄 Morelos Turístico</div>
+        <div class="lang-switch" role="group" aria-label="Cambio de idioma">
+            <button lang="es" aria-pressed="true" title="Español">🇲🇽</button>
+            <button lang="en" aria-pressed="false" title="English">🇺🇸</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-subpage">
+            <h1>Ayuda y Soporte</h1>
+            <p>Encuentra respuestas a tus preguntas o contáctanos para asistencia.</p>
+            <a href="../index.html" class="back-button-hero">
+                <i class="fas fa-arrow-left"></i> Volver al Inicio
+            </a>
+        </section>
+
+        <section class="section-content-page">
+            <h2 class="section-title">Preguntas Frecuentes (FAQ)</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Cómo busco información sobre un municipio específico?
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>En la pantalla principal, selecciona la sección "Municipios" y luego elige el municipio de tu interés.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Dónde encuentro información sobre eventos y festividades?
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Dirígete a la sección "Eventos" desde el menú principal para ver el calendario y detalles de las festividades.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Hay opciones de hospedaje y gastronomía en este quiosco?
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sí, explora las secciones "Hospedaje" y "Gastronomía" para encontrar recomendaciones de hoteles, restaurantes y platillos típicos.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Cómo reporto un problema con el quiosco?
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Si experimentas algún problema, por favor contacta al personal de soporte utilizando la información en la sección de "Contacto" más abajo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-content-page">
+            <h2 class="section-title">Cómo Usar este Quiosco</h2>
+            <div class="quick-access-grid">
+                <article class="card how-to-item">
+                    <i class="fas fa-hand-point-up fa-3x"></i>
+                    <h3>Toca la Pantalla</h3>
+                    <p>Interactúa con el quiosco tocando las secciones y enlaces.</p>
+                </article>
+                <article class="card how-to-item">
+                    <i class="fas fa-arrow-left fa-3x"></i>
+                    <h3>Botón "Volver"</h3>
+                    <p>Usa el botón "Volver" en la parte superior para regresar a la página anterior.</p>
+                </article>
+                <article class="card how-to-item">
+                    <i class="fas fa-home fa-3x"></i>
+                    <h3>Regresar al Inicio</h3>
+                    <p>Puedes regresar a la página principal en cualquier momento tocando el logo "🌄 Morelos Turístico".</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-content-page contact-section">
+            <h2 class="section-title">Contacto</h2>
+            <p>Si no encuentras lo que buscas, no dudes en contactarnos:</p>
+            <div class="contact-info-grid">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Teléfono: 777 123 4567</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Correo: info@morelosturistico.gob.mx</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Dirección: Av. Siempre Viva #123, Cuernavaca, Morelos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gobierno del Estado de Morelos © 2025</p>
+    </footer>
+
+    <script>
+        // JavaScript para la funcionalidad de acordeón
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordionItem = header.parentElement;
+                    const accordionContent = header.nextElementSibling;
+                    const arrowIcon = header.querySelector('.arrow-icon');
+
+                    // Cierra todos los demás ítems abiertos
+                    document.querySelectorAll('.accordion-item.active').forEach(item => {
+                        if (item !== accordionItem) {
+                            item.classList.remove('active');
+                            item.querySelector('.accordion-content').style.maxHeight = null;
+                            item.querySelector('.arrow-icon').classList.remove('fa-chevron-up');
+                            item.querySelector('.arrow-icon').classList.add('fa-chevron-down');
+                        }
+                    });
+
+                    // Abre o cierra el ítem actual
+                    accordionItem.classList.toggle('active');
+                    if (accordionItem.classList.contains('active')) {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                        arrowIcon.classList.remove('fa-chevron-down');
+                        arrowIcon.classList.add('fa-chevron-up');
+                    } else {
+                        accordionContent.style.maxHeight = null;
+                        arrowIcon.classList.remove('fa-chevron-up');
+                        arrowIcon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
